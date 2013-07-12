@@ -2,3 +2,5 @@
 /.*
 !/.vimrc
 !/.gitignore
+!/.gitconfig
+!/.README.md

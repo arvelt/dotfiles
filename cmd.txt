@@ -1,0 +1,3 @@
+./dotfiles/.vimrc .vimrc
+owner@owner-ThinkPad-X60:~$ ln -s ./dotfiles/.gitconfig .gitconfig
+owner@owner-ThinkPad-X60:~$ ln -s ./dotfiles/.gitignore .gitignore

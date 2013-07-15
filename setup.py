@@ -16,7 +16,7 @@ dotfiles = (
     'gitignore'
 )
 for dotfile in dotfiles:
-	    os.system('ln -s ~/dotfiles/' + dotfile + ' ~/.' + dotfile)
+	    os.system('ln -fs ~/dotfiles/_' + dotfile + ' ~/.' + dotfile)
 
 
 

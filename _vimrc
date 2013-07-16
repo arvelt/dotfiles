@@ -152,7 +152,7 @@
  set backspace=indent,eol,start
  
  " オートインデント
- set autoindent
+ "set autoindent
  
  " 移動コマンドを使ったとき、行頭に移動しない
  set nostartofline

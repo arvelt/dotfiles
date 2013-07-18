@@ -44,6 +44,19 @@
    NeoBundle 'anekos/char-counter-vim'
    set statusline=%{b:charCounterCount}
 
+   "「挿入モード→ノーマルモードでIMEを切るための設定」
+   NeoBundle 'fuenor/im_control.vim'
+   inoremap <silent> <C-^> <C-r>=IMState('FixMode')<CR>   " 「日本語入力固定モード」切替キー
+   let IM_CtrlIBusPython = 1                              " PythonによるIBus制御指定
+   "let IM_CtrlIBusPythonVer = 'python3'                  " python3を使用する場合
+
+   " 挿入モード終了時に IME 状態を保存しない
+   set iminsert=0 
+   inoremap <silent> <Esc> <Esc>
+   inoremap <silent> <C-[> <Esc>
+
+   "Add more...
+
    " Brief help
    " :NeoBundleList          - list configured bundles
    " :NeoBundleInstall(!)    - install(update) bundles
@@ -51,7 +64,6 @@
 
    " 必須。ファイル名と内容によってファイルタイプを判別し、ファイルタイププラグインを有効にする
    filetype plugin indent on
-   filetype on
  
    " Installation check.
    NeoBundleCheck
@@ -135,10 +147,11 @@
  """ 自動的に改行が入るのを無効化
  set textwidth=0
 
- """クリップボードをWindowsと連携
- set clipboard=unnamed
+ """クリップボードとヤンク、レジスタを連携
+ set clipboard+=unnamed
+ set clipboard+=autoselect
+ set guioptions+=a
 
- 
  "------------------------------------------------------------
  " 役に立つオプション
  "
@@ -190,7 +203,7 @@
 "set browsedir=buffer 
 
  """ウィンドウを最大化して起動
- "au GUIEnter * simalt ~x
+ au GUIEnter * simalt ~x
 
  """ 80文字目にラインを入れる
  set colorcolumn=80
@@ -205,7 +218,7 @@
  "set expandtab
  
  " インデントにハードタブを使う場合の設定。
- " タブ文字を2文字分の幅で表示する。
+ " タブ文字を4文字分の幅で表示する。
  set shiftwidth=4
  set tabstop=4
  
@@ -238,16 +251,12 @@
  """ 右に移動
  inoremap <C-l> <Right>
 
- """ j, k による移動を折り返されたテキストでも自然に振る舞うように変更
- "nnoremap j gj
- "nnoremap k gk
- "inoremap <C-j> gj
- "inoremap <C-k> gk
+ """ j, k による移動時、実際の行ではなく見た目の行で移動するように変更
+ nnoremap j gj
+ nnoremap k gk
+ inoremap <C-j> gj
+ inoremap <C-k> gk
  
- " 挿入モード終了時に IME 状態を保存しない
- inoremap <silent> <Esc> <Esc>
- inoremap <silent> <C-[> <Esc>
-
  "----------------------------------------------------
  " 引用符等の設定
  "----------------------------------------------------

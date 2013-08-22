@@ -206,7 +206,7 @@
  au GUIEnter * simalt ~x
 
  """ 80文字目にラインを入れる
- set colorcolumn=80
+ "set colorcolumn=80
  
  "------------------------------------------------------------
  " インデント関連のオプション
@@ -254,8 +254,8 @@
  """ j, k による移動時、実際の行ではなく見た目の行で移動するように変更
  nnoremap j gj
  nnoremap k gk
- inoremap <C-j> gj
- inoremap <C-k> gk
+ "inoremap <C-j> gj
+ "inoremap <C-k> gk
  
  "----------------------------------------------------
  " 引用符等の設定

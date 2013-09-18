@@ -3,3 +3,7 @@
 	email = k.ota@gigei.jp 
 [core]
 	editor = /usr/bin/vim
+[color]
+	diff = auto
+	status = auto
+	branch = auto

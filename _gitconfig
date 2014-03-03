@@ -1,6 +1,6 @@
 [user]
-	name = ""
-	email = ""
+	name = arvelt
+	email = arvelt.s@gmail.com
 [core]
 	editor = /usr/bin/vim
 [color]

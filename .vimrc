@@ -44,6 +44,11 @@
    NeoBundle 'anekos/char-counter-vim'
    set statusline=%{b:charCounterCount}
 
+   " incremant search
+   NeoBundle "kien/ctrlp.vim"
+   let g:ctrlp_regexp = 1  "検索に正規表現を使う
+
+
    "「挿入モード→ノーマルモードでIMEを切るための設定」
    NeoBundle 'fuenor/im_control.vim'
    inoremap <silent> <C-^> <C-r>=IMState('FixMode')<CR>   " 「日本語入力固定モード」切替キー

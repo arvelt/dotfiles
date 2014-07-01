@@ -21,4 +21,3 @@ dotfiles = (
 
 os.system('ln -fs ~/dotfiles/.emacs.d  ~/.emacs.d')
 os.system('echo "source ~/dotfiles/git-completion.bash" >> ~/.bash_profile')
-

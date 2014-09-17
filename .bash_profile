@@ -9,6 +9,14 @@ export HISTCONTROL=ignoreboth #重複無視かつ空白初め無視
 
 source ~/dotfiles/git-completion.bash
 
+# increment seach and open vim
+function pecovim {
+	local file="$( git ls-files | peco )"
+	if [ ! -z "$file" ] ; then
+		vim "$file"
+	fi
+}
+
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi

@@ -12,12 +12,24 @@ source ~/dotfiles/git-completion.bash
 # add peco to path
 export PATH=$PATH:$HOME/dotfiles/peco
 
-# increment seach and open vim
-function pecovim {
+# peco query and open vim
+function gitvim {
 	local file="$( git ls-files | peco )"
 	if [ ! -z "$file" ] ; then
 		vim "$file"
 	fi
+}
+function findvim {
+    local file="$( find . | peco )"
+    if [ ! -z "$file" ] ; then
+        vim "$file"
+    fi
+}
+function lsvim {
+    local file="$( ls -R | peco )"
+    if [ ! -z "$file" ] ; then
+        vim "$file"
+    fi
 }
 
 if [ -f ~/.bashrc ]; then

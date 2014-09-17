@@ -9,6 +9,9 @@ export HISTCONTROL=ignoreboth #重複無視かつ空白初め無視
 
 source ~/dotfiles/git-completion.bash
 
+# add peco to path
+export PATH=$PATH:$HOME/dotfiles/peco
+
 # increment seach and open vim
 function pecovim {
 	local file="$( git ls-files | peco )"

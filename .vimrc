@@ -60,6 +60,9 @@
    inoremap <silent> <Esc> <Esc>
    inoremap <silent> <C-[> <Esc>
 
+   " rogue.vim
+   NeoBundle "katono/rogue.vim"
+
    "Add more...
 
    " Brief help

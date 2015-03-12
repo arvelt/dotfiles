@@ -9,6 +9,10 @@ export HISTCONTROL=ignoreboth #重複無視かつ空白初め無視
 
 source ~/dotfiles/git-completion.bash
 
+# add my local bin path
+mkdir ~/.bin
+export PATH=$PATH:$HOME/.bin
+
 # add peco to path
 export PATH=$PATH:$HOME/dotfiles/peco
 

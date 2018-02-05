@@ -1,5 +1,6 @@
 #!/bin/sh
-ln -fs ~/dotfiles/.atom/config.cson ~/.atom/config.cson
-ln -fs ~/dotfiles/.vimrc ~/.vimrc
-ln -fs ~/dotfiles/.emacs.d  ~/.emacs.d
+# for mac
 ln -fs ~/dotfiles/.bash_profile  ~/.bash_profile
+ln -fs ~/dotfiles/atom/config.cson ~/.atom/config.cson
+ln -fs ~/dotfiles/vim/.vimrc ~/.vimrc
+ln -fs ~/dotfiles/code/settings.json  ~/Library/Application Support/Code/User/settings.json

@@ -8,6 +8,10 @@ HISTCONTROL=ignoreboth:erasedups #重複無視かつ空白初め無視
 
 source ~/dotfiles/git-completion.bash
 
+# gitの初期設定 コミットコメントのVimでプラグインを読み込まない
+git config --global core.editor "vim -Nu NONE --noplugin -i NONE"
+git config --global color.ui true
+
 # add my local bin path
 mkdir -p $HOME/.bin
 export PATH=$PATH:$HOME/.bin

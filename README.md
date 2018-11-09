@@ -7,4 +7,4 @@ dotfiles
 
 2.exec init script
 
-    $ python dotfiles/setup.py
+    $ ./dotfiles/setup.sh

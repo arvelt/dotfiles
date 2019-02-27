@@ -14,7 +14,15 @@ git config --global color.ui true
 
 # add my local bin path
 mkdir -p $HOME/.bin
-export PATH=$PATH:$HOME/.bin
+export PATH=$HOME/.bin:$PATH
+
+# go lang
+mkdir -p $HOME/go
+mkdir -p $HOME/go/pkg
+mkdir -p $HOME/go/bin
+mkdir -p $HOME/go/src
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
 
 # add peco to path
 export PATH=$PATH:$HOME/dotfiles/peco

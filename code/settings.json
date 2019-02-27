@@ -1,9 +1,10 @@
 {
-    "editor.fontSize": 14,
+    "editor.fontSize": 12,
     "editor.tabSize": 4,
     "python.disablePromptForFeatures": [
         "pylint"
     ],
     // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on"
 }

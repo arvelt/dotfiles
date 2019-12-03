@@ -6,5 +6,12 @@
     ],
     // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
     "editor.renderWhitespace": "all",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    }
 }

@@ -6,7 +6,7 @@
 HISTFILESIZE=1000
 HISTCONTROL=ignoreboth:erasedups #重複無視かつ空白初め無視
 
-source ~/dotfiles/git-completion.zsh
+source ~/dotfiles/git-completion.bash
 
 # gitの初期設定 コミットコメントのVimでプラグインを読み込まない
 git config --global core.editor "vim -Nu NONE --noplugin -i NONE"

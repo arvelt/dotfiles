@@ -27,7 +27,3 @@ mkdir -p $HOME/go/bin
 mkdir -p $HOME/go/src
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
-
-if [ -f ~/.zshrc ]; then
-    source ~/.zshrc
-fi
